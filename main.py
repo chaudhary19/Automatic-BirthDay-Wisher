@@ -43,15 +43,13 @@ if __name__ == "__main__":
     
     print("How may new records you would like to enter?")
     n=int(input())
-    if n>0:
-        for _ in range(n):
-            print("Enter name: ")
-            name=input()
-            print("Enter DOB: ")
-            dob=input()
-            dict={'Name':name, 'Birthday':dob}
-            df=df.append(dict, ignore_index=True)
-            df.to_excel('data.xlsx')
-    
-    
+    for _ in range(n):
+        print("Enter name: ")
+        name=input()
+        print("Enter DOB: ")
+        dob=input()
+        dict={'Name':name, 'Birthday':dob}
+        df=df.append(dict, ignore_index=True)
+        df.to_excel('data.xlsx')
         
+    #print(df)
