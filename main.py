@@ -8,7 +8,7 @@ GMAIL_PSWD = ''
 
 def sendEmail(to, sub, msg):
     
-    s = smtplib.SMTP("smtp.gmail.com", 587)
+    s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
     s.login(GMAIL_ID, GMAIL_PSWD)
     
@@ -36,7 +36,7 @@ if __name__ == "__main__":
     for i in writeInd:
         
         yr = df.loc[i, 'Year']
-        df.loc[i, 'Year'] = str(yr) + "," + str(int(year)+1)
+        df.loc[i, 'Year'] = str(yr) + ',' + str(int(year)+1)
 
     
     df.to_excel('data.xlsx')
