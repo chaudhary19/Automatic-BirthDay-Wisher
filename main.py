@@ -48,7 +48,13 @@ if __name__ == "__main__":
         name=input()
         print("Enter DOB: ")
         dob=input()
-        dict={'Name':name, 'Birthday':dob}
+        print("Enter Dialogoue: ")
+        dg=input()
+        print("Enter Year: ")
+        yrr=input()
+        print("Enter email: ")
+        mail=input()
+        dict={'Name':name, 'Birthday':dob, 'Dialogue':dg, 'Year':yrr, 'Email':mail}
         df=df.append(dict, ignore_index=True)
         df.to_excel('data.xlsx')
         
