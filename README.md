@@ -1,7 +1,7 @@
 # Automatic Birthday Wisher
 It is an Automatic Birthday Wisher which can be used for wishing our friends and relatives on their birthday automatically, so we do not need to remember their birthday every time! ✌ <br>
 
-## Modules used-
+## Modules used
 <ul>
 <li>Pandas</li>
 <li>datetime</li>
