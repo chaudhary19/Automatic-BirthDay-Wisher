@@ -23,6 +23,7 @@ if __name__ == "__main__":
     today = datetime.datetime.now().strftime("%d-%m")
     year = datetime.datetime.now().strftime("%Y")
     
+    
     writeInd = []
     for index, item in df.iterrows():
         
@@ -38,6 +39,23 @@ if __name__ == "__main__":
         df.loc[i, 'Year'] = str(yr) + ',' + str(int(year)+1)
 
     
-    # print(df)
-    df.to_excel('data.xlsx', index = False)
+    df.to_excel('data.xlsx')
     
+    print("How may new records you would like to enter?")
+    n=int(input())
+    for _ in range(n):
+        print("Enter name: ")
+        name=input()
+        print("Enter DOB: ")
+        dob=input()
+        print("Enter Dialogoue: ")
+        dg=input()
+        print("Enter Year: ")
+        yrr=input()
+        print("Enter email: ")
+        mail=input()
+        dict={'Name':name, 'Birthday':dob, 'Dialogue':dg, 'Year':yrr, 'Email':mail}
+        df=df.append(dict, ignore_index=True)
+        df.to_excel('data.xlsx')
+        
+    #print(df)
