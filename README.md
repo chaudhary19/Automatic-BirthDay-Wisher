@@ -8,6 +8,20 @@ It is an Automatic Birthday Wisher which can be used for wishing our friends and
 <li>Smtplib</li>
 </ul>
 
+## Installation
+
+Installing pip3
+
+    $ sudo apt-get -y install python3-pip
+
+Installing required packages
+
+    $ pip3 install -r requirements.txt 
+    
+Running the program
+
+    $ python3 main.py
+
 ## How it works?
 <ul>
 <li>Pandas module is used to store and read data from the excel file.</li>
