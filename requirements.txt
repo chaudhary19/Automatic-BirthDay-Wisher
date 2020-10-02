@@ -1,0 +1,3 @@
+pandas==1.1.2
+datetime==4.3
+xlrd>=1.0.0
