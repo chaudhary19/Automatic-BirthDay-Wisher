@@ -48,7 +48,7 @@ if __name__ == "__main__":
         name=input()
         print("Enter DOB: ")
         dob=input()
-        print("Enter Dialogoue: ")
+        print("Enter Dialogue: ")
         dg=input()
         print("Enter Year: ")
         yrr=input()
