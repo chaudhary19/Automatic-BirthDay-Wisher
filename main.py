@@ -34,9 +34,9 @@ if __name__ == "__main__":
     print("How many new records you would like to enter?")
     n=int(input())
     for _ in range(n):
-        print("Enter name: ")
+        print("Enter Name: ")
         name=input()
-        print("Enter DOB: ")
+        print("Enter DOB (yyyy-mm-dd): ")
         dob=input()
         print("Enter their Email: ")
         mail=input()
