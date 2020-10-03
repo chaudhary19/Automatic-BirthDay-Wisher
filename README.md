@@ -10,17 +10,13 @@ It is an Automatic Birthday Wisher which can be used for wishing our friends and
 
 ## Installation
 
-Installing pip3
+#### Setup
 
-    $ sudo apt-get -y install python3-pip
-
-Installing required packages
-
-    $ pip3 install -r requirements.txt 
+`make setup`
     
-Running the program
+#### Running the program
 
-    $ python3 main.py
+ `make run`
 
 ## How it works?
 <ul>
